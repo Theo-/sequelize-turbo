@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Theo-/sequelize-turbo#readme",
   "dependencies": {
+    "debug": "^3.1.0",
     "object-hash": "^1.2.0"
   }
 }

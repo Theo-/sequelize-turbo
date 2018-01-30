@@ -32,3 +32,14 @@ export default User
 ```
 
 That's it! Turbo uses RAM to cache objects. However, is a distributed envrionment, using Redis is much more efficient.
+
+## How does it work
+
+Turbo adds decoratos on top of the usual sequelize functions `find`, `update`, `destroy` and `insert`. Using a dependency cache, Turbo can figure out when to
+invalidate objects and when to cache them.
+
+Turbo guarantees freshness of the objects, you will never get outdated objects.
+
+## Debug
+
+Set the following environment variable to debug Turbo: `DEBUG=turbo:*`

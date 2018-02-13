@@ -1,6 +1,6 @@
 # Sequelize Turbo
 
-Turbo is a caching layer that is eventually consitant for FAUW (Frequent access, unfrequent writes) objects.
+Turbo is a caching layer that is eventually consistent for FAUW (Frequent access, unfrequent writes) objects.
 
 ## How to install
 
@@ -31,7 +31,7 @@ const User = Turbo(
 export default User
 ```
 
-That's it! Turbo uses RAM to cache objects. However, is a distributed envrionment, using Redis is much more efficient.
+That's it! Turbo uses RAM to cache objects. However, is a distributed environment, using Redis is much more efficient.
 
 ## How does it work
 
